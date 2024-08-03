@@ -1,21 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import { anonymousPro, dmMono, leagueSpartan } from "@/app/ui/fonts";
+import Footer from "@/components/footer";
+import LineWarning from "@/components/line-warning";
 
-function Header() {
+function HeaderHistory() {
   return (
-    <header className="bg-primary-yellow text-black">
-      <div className="mx-auto flex flex-col sm:flex-row justify-between py-4 px-4">
-        <div className="flex items-center space-x-2">
-          <h1
-            className={`${leagueSpartan.className} text-[85px] sm:text-[60px] md:text-[70px] lg:text-[85px] font-extrabold text-black leading-tight `}
-          >
-            ENGINEER
-            <br />
-            WORKWEAR
-          </h1>
-        </div>
-        <div className="relative bg-primary-yellow py-4">
+    <header className="relative h-lvh">
+      <Image
+        src="/history-main.svg" // Replace with your image path
+        alt="Background Image"
+        layout="fill" // Fill the parent element
+        objectFit="cover" // Cover the area
+        className="z-0" // Behind other content
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-10 z-10" />
+      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between z-20 relative">
+        <h1
+          className={`${leagueSpartan.className} text-[85px] sm:text-[60px] md:text-[70px] lg:text-[85px] font-extrabold text-black leading-tight `}
+        >
+          ENGINEER
+          <br />
+          WORKWEAR
+        </h1>
+        <div className="relative py-4">
           <div className="container mx-auto">
             <nav className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-white font-bold text-lg">
               <Link
@@ -50,20 +58,7 @@ function Header() {
               </Link>
             </nav>
           </div>
-          <div className="relative">
-            <div
-              className="bg-black h-6 mt-2"
-              style={{ width: "110%", position: "relative", left: "0" }}
-            ></div>
-          </div>
         </div>
-      </div>
-      <div className="bg-bg text-yellow-200 py-2 pl-4">
-        <p
-          className={`text-[50px] sm:text-[30px] md:text-[40px] lg:text-[50px] ${anonymousPro.className} text-[#FFD600]`}
-        >
-          “Safety with style”
-        </p>
       </div>
     </header>
   );
@@ -80,18 +75,6 @@ function Hero() {
         className="w-full h-auto"
       />
     </section>
-  );
-}
-
-function LineWarning() {
-  return (
-    <Image
-      src="/warning-line.png"
-      alt="Hero Image"
-      width={1920}
-      height={50}
-      className="w-full"
-    />
   );
 }
 
@@ -140,74 +123,52 @@ function AboutUs() {
   );
 }
 
-const Footer = () => {
+function History1() {
   return (
-    <div className="bg-bg text-white py-8">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-3 md:mb-0">
-          <ul>
-            <li className="mb-2">
-              <a
-                href="#"
-                className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
-              >
-                About us
-                <span className="absolute left-0 bottom-[-4px] w-full border-b-2 border-yellow-2"></span>
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="#"
-                className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
-              >
-                How to Order
-                <span className="absolute left-0 bottom-[-4px] w-full border-b-2 border-yellow-2"></span>
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="#"
-                className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
-              >
-                FAQ
-                <span className="absolute left-0 bottom-[-4px] w-full border-b-2 border-yellow-2"></span>
-              </a>
-            </li>
-            <li className="mb-2">
-              <a
-                href="#"
-                className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
-              >
-                Contact
-                <span className="absolute left-0 bottom-[-4px] w-full border-b-2 border-yellow-2"></span>
-              </a>
-            </li>
-          </ul>
-          <div className="">
-            <p className="mt-4 flex items-center text-sm">
-              <span className="text-yellow-2 mr-2">©</span> 2024 ENGINEER
-              WORKWEAR
-            </p>
-          </div>
-        </div>
-        <div className="flex space-x-8">
-          <Image src="/shopee.svg" width={40} height={30} alt="Logo" />
-          <Image src="/browse.svg" width={40} height={30} alt="Logo" />
-          <Image src="/tokped.svg" width={40} height={30} alt="Logo" />
-        </div>
+    <section className="bg-bg">
+      <div className="p-12 text-white w-full pb-10 px-20">
+        <h2
+          className={`mb-4 ${leagueSpartan.className} text-[40px] font-extrabold text-right`}
+        >
+          History
+        </h2>
+        <p className={`text-[20px] mb-4 font-light ${dmMono.className}`}>
+          ENGINEER WORKWEAR Adalah Perusahaan yang bergerak dibidang Apparel
+          namun berbeda dari yang lainnya Engineer Workwear mengkhususkan target
+          mereka terhadap para Engineer dan pekerja kasar,ciri khas style dari
+          baju mereka yang industrialis dengan safety quality dengan standar
+          industry. Engineerworkwear sendiri merupakan sebuah brand yang
+          tercetus Ketika sang owner dan temannya ingin menambah dan
+          memperkenalkan identitas diri mereka sebag aianak Teknik,dari sinilah
+          mereka membuat brand Bernama Engineer Workwear.
+        </p>
       </div>
-    </div>
+    </section>
   );
-};
+}
+
+function History2() {
+  return (
+    <section className="bg-primary-yellow py-10">
+      <div className="p-12 text-black w-full pb-10 flex items-center justify-center">
+        <p className={`text-[20px] mb-4 font-medium ${dmMono.className}`}>
+          Brand in akan terus ada dan berkembang demi
+          <br />
+          sadarnya masyarakat tentang keselamatan kerja
+        </p>
+      </div>
+    </section>
+  );
+}
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
-      <Hero />
+      <HeaderHistory />
       <LineWarning />
-      <AboutUs />
+      <History1 />
       <LineWarning />
+      <History2 />
       <Footer />
     </div>
   );
