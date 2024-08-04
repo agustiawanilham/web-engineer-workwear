@@ -13,7 +13,7 @@ function Header() {
             ENGINEER
             <br />
             WORKWEAR
-          </h1>
+          </h1>{" "}
         </div>
         <div className="relative bg-primary-yellow py-4">
           <div className="container mx-auto">
@@ -32,7 +32,7 @@ function Header() {
               </Link>
               <Link
                 className={`${leagueSpartan.className} text-[30px] sm:text-[20px] md:text-[25px] lg:text-[30px] hover:underline`}
-                href="#store"
+                href="/store"
               >
                 Store
               </Link>
