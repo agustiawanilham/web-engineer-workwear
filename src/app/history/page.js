@@ -40,19 +40,19 @@ function HeaderHistory() {
               </Link>
               <Link
                 className={`${leagueSpartan.className} text-[30px] sm:text-[20px] md:text-[25px] lg:text-[30px] hover:underline`}
-                href="#store"
+                href="/store"
               >
                 Store
               </Link>
               <Link
                 className={`${leagueSpartan.className} text-[30px] sm:text-[20px] md:text-[25px] lg:text-[30px] hover:underline`}
-                href="#contact"
+                href="/contact"
               >
                 Contact
               </Link>
               <Link
                 className={`${leagueSpartan.className} text-[30px] sm:text-[20px] md:text-[25px] lg:text-[30px] hover:underline`}
-                href="#product"
+                href="/product"
               >
                 Product
               </Link>
