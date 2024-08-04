@@ -9,7 +9,7 @@ export default () => {
           <ul>
             <li className="mb-2">
               <a
-                href="#"
+                href="/"
                 className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
               >
                 About us
@@ -18,7 +18,7 @@ export default () => {
             </li>
             <li className="mb-2">
               <a
-                href="#"
+                href="/store"
                 className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
               >
                 How to Order
@@ -36,7 +36,7 @@ export default () => {
             </li>
             <li className="mb-2">
               <a
-                href="#"
+                href="/contact"
                 className="relative hover:text-yellow-2 flex items-center text-[20px] font-light"
               >
                 Contact
@@ -52,9 +52,30 @@ export default () => {
           </div>
         </div>
         <div className="flex space-x-8">
-          <Image src="/shopee.svg" width={40} height={30} alt="Logo" />
-          <Image src="/browse.svg" width={40} height={30} alt="Logo" />
-          <Image src="/tokped.svg" width={40} height={30} alt="Logo" />
+          <a
+            href="https://shopee.co.id/engineercloth?categoryId=100009&entryPoint=ShopByPDP&itemId=23602442279"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-yellow-2 p-2 rounded-full"
+          >
+            <Image src="/shopee.svg" width={40} height={30} alt="Logo" />
+          </a>
+          <a
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-yellow-2 p-2 rounded-full"
+          >
+            <Image src="/browse.svg" width={40} height={30} alt="Logo" />
+          </a>
+          <a
+            href="https://www.tokopedia.com/engineerworkwear?source=universe&st=product"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-yellow-2 p-2 rounded-full"
+          >
+            <Image src="/tokped.svg" width={40} height={30} alt="Logo" />
+          </a>
         </div>
       </div>
     </div>

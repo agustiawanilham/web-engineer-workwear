@@ -120,9 +120,31 @@ function ContactUs() {
         </p>
         <div className="max-w-7xl py-6 px-4 flex justify-start z-20 relative">
           <div className="flex space-x-8">
-            <Image src="/whatsapp.svg" width={75} height={75} alt="Logo" />
-            <Image src="/instagram.svg" width={75} height={75} alt="Logo" />
-            <Image src="/email.svg" width={75} height={75} alt="Logo" />
+            <a
+              href="https://api.whatsapp.com/send/?phone=628112354433&text=Hai+Kak.+Lihat+dari+Iklan,+ingin+Bertanya+Produknya+yaa%21%0A&type=phone_number&app_absent=0&utm_campaign=admin+cs&utm_source=linktree"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-yellow-2 p-2 rounded-full"
+            >
+              <Image src="/whatsapp.svg" width={75} height={75} alt="Logo" />
+            </a>
+            <a
+              href="https://www.instagram.com/engineerworkwearstore/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-yellow-2 p-2 rounded-full"
+            >
+              <Image src="/instagram.svg" width={75} height={75} alt="Logo" />
+            </a>
+
+            <a
+              href="mailto:nurdienfadli@gmail.com?subject=Bertanya%20Produk&body=Hai%20Kak.%20Ingin%20bertanya%20produk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-yellow-2 p-2 rounded-full"
+            >
+              <Image src="/email.svg" width={75} height={75} alt="Logo" />
+            </a>
           </div>
         </div>
       </div>
